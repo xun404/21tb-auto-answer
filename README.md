@@ -4,9 +4,9 @@
 > 18年大火的直播答题中，对某答题app也进行了类似爆破，并薅了不少羊毛，到了后期已经做到了全自动化的答题，并且是100%正确
 
 正常情况下小程序和服务端通信流程
-![正常流程](img/1.jpg)
+![正常流程](img/a1.jpg)
 使用charles对请求进行串改流程
-![劫持流程](img/2.jpg)
+![劫持流程](img/a2.jpg)
 
     因为我的主力电脑就是MacOS，所以就直接使用了Charles，当然Windows上也有很多类似软件，这里不再赘述。
 
@@ -82,12 +82,12 @@ router.post('/21tb/:do', function (req, res, next) {
 
 ```
 再来看Charles上的配置，主要使用的`Map Remote`功能
-![Map Remote](img/3.jpg)
+![Map Remote](img/a3.jpg)
 
 通过这一系列的配置后，就可以实现对小程序请求的中间者攻击了
 
 最终效果，正确答案上会有个“✅”：
-![Xiaomi](img/4.jpg)
+![Xiaomi](img/a4.jpg)
 
 ### 0x03 引用&相关
 1. [Charles Web Debugging Proxy](https://www.charlesproxy.com/)
